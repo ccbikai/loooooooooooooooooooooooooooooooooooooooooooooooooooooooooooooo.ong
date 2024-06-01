@@ -7,7 +7,7 @@ export function stringToBinary(str) {
 		})
 		.join("")
 		.replaceAll("1", "O")
-    .replaceAll("0", "o");
+		.replaceAll("0", "o");
 }
 
 export function binaryToString(str) {

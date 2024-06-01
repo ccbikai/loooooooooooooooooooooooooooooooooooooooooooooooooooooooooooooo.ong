@@ -19,5 +19,5 @@ const adapters = {
 // https://astro.build/config
 export default defineConfig({
 	adapter: adapters[provider] ?? adapters.node,
-	output: "hybrid"
+	output: "hybrid",
 });
