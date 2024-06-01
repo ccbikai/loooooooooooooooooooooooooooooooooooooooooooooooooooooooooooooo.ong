@@ -1,0 +1,57 @@
+---
+import "normalize.css";
+import "magick.css";
+import "../assets/css/main.css";
+import { SEO } from "astro-seo";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Tool from "../components/Tool.astro";
+import config from "../config";
+export const prerender = false
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SEO
+      title={config.title + ' - ' + config.description}
+      description={config.description}
+      canonical={config.url}
+      openGraph={{
+        basic: {
+          type: "website",
+          title: config.title,
+          image: config.image,
+          url: config.url,
+        }
+      }}
+      twitter={{
+        card: "summary_large_image",
+      }}
+    />
+    <Fragment set:html={import.meta.env.HEADER_INJECT} />
+  </head>
+  <body>
+    <main>
+      <Header />
+      <Tool />
+      <Footer />
+    </main>
+    <style>
+      main {
+        max-width: 48rem;
+        height: 100vh;
+        height: 100svh;
+        display: flex;
+        flex-direction: column;
+
+        header + section {
+          flex: 1;
+        }
+      }
+    </style>
+    <Fragment set:html={import.meta.env.FOOTER_INJECT} />
+  </body>
+</html>
