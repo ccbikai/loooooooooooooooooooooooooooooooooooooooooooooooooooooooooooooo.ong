@@ -1,0 +1,42 @@
+<section>
+  <fieldset style="display: none;" id="display-url">
+    <legend>Long URL</legend>
+    <p>
+      This link leads to <span id="real-url-text"></span> .
+      <br>
+      We cannot guarantee the safety of this link. Please click with caution.
+    </p>
+    <a id="real-url" href="#">
+      <button>Open URL</button>
+    </a>
+
+    <a href="/">
+      <button>Go Home</button>
+    </a>
+  </fieldset>
+
+</section>
+
+<style>
+  fieldset {
+    width: 100%;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  span {
+    word-break: break-all;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    margin: 1rem auto;
+  }
+</style>
+
+<script src="../assets/js/display.js"></script>

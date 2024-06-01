@@ -5,9 +5,7 @@ import "../assets/css/main.css";
 import { SEO } from "astro-seo";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import Tool from "../components/Tool.astro";
 import config from "../config";
-export const prerender = false;
 ---
 
 <html lang="en">
@@ -36,7 +34,7 @@ export const prerender = false;
   <body>
     <main>
       <Header />
-      <Tool />
+      <slot />
       <Footer />
     </main>
     <style>
