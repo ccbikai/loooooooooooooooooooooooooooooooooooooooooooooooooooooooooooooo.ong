@@ -12,11 +12,6 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
-		"@astrojs/cloudflare": "^10.2.6",
-		"@astrojs/netlify": "^5.2.1",
-		"@astrojs/node": "^8.2.5",
-		"@astrojs/vercel": "^7.6.0",
-		"@zeabur/astro-adapter": "^1.0.4",
 		"astro": "^4.9.2",
 		"astro-seo": "^0.8.3",
 		"magick.css": "^1.0.6",
