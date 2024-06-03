@@ -8,7 +8,7 @@ if (matchedPath) {
 		const realUrlLext = document.getElementById("real-url-text");
 		const realUrl = document.getElementById("real-url");
 		const diaplayUrl = document.getElementById("display-url");
-		realUrlLext.innerText = validURL.href;
+		realUrlLext.textContent = validURL.href;
 		realUrl.href = validURL.href;
 		diaplayUrl.style.display = "block";
 	} catch (e) {

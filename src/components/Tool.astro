@@ -1,11 +1,11 @@
 <section>
   <fieldset>
     <legend>Origin URL</legend>
-    <input id="origin-url" type="url">
+    <input id="origin-url" type="url" placeholder="https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong">
   </fieldset>
   <fieldset>
     <legend>Long URL</legend>
-    <textarea id="long-url" rows="6" />
+    <textarea id="long-url" rows="6" readonly />
     <button id="open-url">Open URL</button> <button id="copy-url">Copy URL</button>
   </fieldset>
 </section>
@@ -29,6 +29,10 @@
 
   input:focus, textarea:focus {
     margin-bottom: 1rem;
+  }
+
+  input::placeholder {
+    color: #988f8a;
   }
 
   button {
