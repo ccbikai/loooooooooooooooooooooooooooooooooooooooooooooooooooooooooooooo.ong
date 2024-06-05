@@ -1,9 +1,9 @@
 :root {
   font-size: calc(1rem + 0.25vw);
-  --fg: #5e5048;
-  --bg: #eeeae6;
-  --form-fg: #5e5048;
-  --form-bg: #eeeae6;
+  --fg: #524641;
+  --bg: #e5e2dc;
+  --form-fg: #524641;
+  --form-bg: #e5e2dc;
 }
 
 body {
