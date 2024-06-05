@@ -4,12 +4,15 @@ const matchedPath = location.pathname.match(/^\/l(O+)ng$/i);
 
 if (matchedPath) {
 	try {
-		const validURL = new URL(binaryToString(matchedPath[1]));
+		const validUrl = new URL(binaryToString(matchedPath[1]));
+		if (!validUrl.href.startsWith("http")) {
+			throw new Error("invalid URL");
+		}
 		const realUrlLext = document.getElementById("real-url-text");
 		const realUrl = document.getElementById("real-url");
 		const diaplayUrl = document.getElementById("display-url");
-		realUrlLext.textContent = validURL.href;
-		realUrl.href = validURL.href;
+		realUrlLext.textContent = validUrl.href;
+		realUrl.href = validUrl.href;
 		diaplayUrl.style.display = "block";
 	} catch (e) {
 		console.warn("binaryToString fail: ", matchedPath, e);

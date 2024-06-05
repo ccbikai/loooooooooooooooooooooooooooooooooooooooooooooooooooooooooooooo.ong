@@ -7,21 +7,21 @@ const longUrl = document.getElementById("long-url");
 
 originUrl?.addEventListener("input", () => {
 	try {
-		const validURL = new URL(originUrl.value);
-		longUrl.value = `${location.origin}/l${stringToBinary(validURL.href)}ng`;
+		const validUrl = new URL(originUrl.value);
+		longUrl.value = `${location.origin}/l${stringToBinary(validUrl.href)}ng`;
 	} catch (e) {
 		console.error(e);
 		longUrl.value = "";
 	}
 });
 
-const openURL = document.getElementById("open-url");
-const copyURL = document.getElementById("copy-url");
+const openUrl = document.getElementById("open-url");
+const copyUrl = document.getElementById("copy-url");
 
-openURL.addEventListener("click", () => {
+openUrl.addEventListener("click", () => {
 	longUrl.value && window.open(longUrl.value, "_blank");
 });
-copyURL.addEventListener("click", async () => {
+copyUrl.addEventListener("click", async () => {
 	if (longUrl.value) {
 		await navigator.clipboard.writeText(longUrl.value);
 		ToastMaker("L(o*62).ong URL Copied!", 1000);
