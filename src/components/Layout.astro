@@ -23,10 +23,17 @@ import config from "../config";
           title: config.title,
           image: config.image,
           url: config.url,
+        },
+        optional: {
+          description: config.description,
         }
       }}
       twitter={{
         card: "summary_large_image",
+        site: '@ccbikai',
+        title: config.title,
+        description: config.description,
+        image: config.image,
       }}
     />
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
