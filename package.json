@@ -8,20 +8,22 @@
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"check": "biome check --apply-unsafe ."
+		"update": "taze -I",
+		"check": "biome check --write --unsafe ."
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
-		"astro": "^4.9.2",
-		"astro-seo": "^0.8.3",
+		"astro": "^4.10.0",
+		"astro-seo": "^0.8.4",
 		"magick.css": "^1.0.6",
 		"normalize.css": "^8.0.1",
 		"std-env": "^3.7.0",
 		"toastmaker": "^1.0.9"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.7.3",
+		"@biomejs/biome": "^1.8.0",
+		"taze": "^0.13.8",
 		"typescript": "^5.4.5"
 	},
-	"packageManager": "pnpm@9.1.4+sha256.30a1801ac4e723779efed13a21f4c39f9eb6c9fbb4ced101bce06b422593d7c9"
+	"packageManager": "pnpm@9.2.0"
 }
