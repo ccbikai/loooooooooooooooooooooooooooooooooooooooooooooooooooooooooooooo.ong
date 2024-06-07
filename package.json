@@ -17,7 +17,6 @@
 		"astro-seo": "^0.8.4",
 		"magick.css": "^1.0.6",
 		"normalize.css": "^8.0.1",
-		"std-env": "^3.7.0",
 		"toastmaker": "^1.0.9"
 	},
 	"devDependencies": {
