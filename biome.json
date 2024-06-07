@@ -22,6 +22,9 @@
 	"overrides": [
 		{
 			"include": ["*.astro"],
+			"organizeImports": {
+				"enabled": false
+			},
 			"linter": {
 				"rules": {
 					"correctness": {

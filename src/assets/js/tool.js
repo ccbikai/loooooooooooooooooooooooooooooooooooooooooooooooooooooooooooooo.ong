@@ -1,5 +1,5 @@
-import ToastMaker from "toastmaker";
 import "toastmaker/dist/toastmaker.css";
+import ToastMaker from "toastmaker";
 import { stringToBinary } from "./utils.js";
 
 const originUrl = document.getElementById("origin-url");

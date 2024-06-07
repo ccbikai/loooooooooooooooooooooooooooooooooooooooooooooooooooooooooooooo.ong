@@ -3,25 +3,27 @@
     <legend>Long URL</legend>
     <p>
       This link leads to <span id="real-url-text"></span> .
-      <br>
+      <br />
       We cannot guarantee the safety of this link. Please click with caution.
     </p>
     <a id="real-url" href="#" title="Open URL">
       <button>Open URL</button>
     </a>
 
-    <a href="/"  title="Go Home">
+    <a href="/" title="Go Home">
       <button>Go Home</button>
     </a>
   </fieldset>
 
+  <Fragment set:html={import.meta.env.CONTENT_INJECT} />
 </section>
 
 <style>
   fieldset {
-    width: 100%;
+    width: auto;
+    margin-bottom: 1rem;
   }
-  
+
   p {
     margin: 0;
   }
