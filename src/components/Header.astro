@@ -4,7 +4,7 @@ import config from "../config";
 
 <header>
   <a href="/" title={config.title}><h1>{config.title}</h1></a>
-  <p>
+  <p class="break-all">
     Make your URL
     looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
   </p>
@@ -43,8 +43,11 @@ import config from "../config";
 
   p {
     text-align: center;
-    word-break: break-all;
     margin: 0;
+  }
+
+  .break-all {
+    word-break: break-all;
   }
 
   ul {

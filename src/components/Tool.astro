@@ -9,7 +9,7 @@
   </fieldset>
   <fieldset>
     <legend>Long URL</legend>
-    <textarea id="long-url" rows="6" readonly></textarea>
+    <textarea id="long-url" rows="6" readonly class="break-all"></textarea>
     <button id="open-url">Open URL</button>
     <button id="copy-url">Copy URL</button>
   </fieldset>
@@ -46,6 +46,10 @@
 
   button {
     margin-top: 0;
+  }
+
+  .break-all {
+    word-break: break-all;
   }
 </style>
 
