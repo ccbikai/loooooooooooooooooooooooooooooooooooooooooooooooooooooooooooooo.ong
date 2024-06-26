@@ -27,3 +27,4 @@ pnpm-debug.log*
 .netlify/
 .vercel/
 .zeabur/
+.wrangler/
