@@ -1,6 +1,7 @@
 import { binaryToString } from "./assets/js/utils";
 
-const DoH = import.meta.env.DOH || "https://family.cloudflare-dns.com/dns-query";
+const DoH =
+	import.meta.env.DOH || "https://family.cloudflare-dns.com/dns-query";
 
 async function isSafeUrl(url) {
 	let safe = false;
@@ -12,10 +13,12 @@ async function isSafeUrl(url) {
 			},
 		});
 		const dnsResult = await res.json();
-		const isBlock = dnsResult.Answer.some(
-			(answer) => answer.data === "0.0.0.0",
-		);
-		safe = !isBlock;
+		if (dnsResult && Array.isArray(dnsResult.Answer)) {
+			const isBlock = dnsResult.Answer.some(
+				(answer) => answer.data === "0.0.0.0",
+			);
+			safe = !isBlock;
+		}
 	} catch (e) {
 		console.warn("isSafeUrl fail: ", url, e);
 	}
