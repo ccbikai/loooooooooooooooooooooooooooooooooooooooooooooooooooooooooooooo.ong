@@ -13,16 +13,17 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
-		"astro": "^4.10.0",
+		"@astrojs/cloudflare": "^11.0.1",
+		"astro": "^4.11.1",
 		"astro-seo": "^0.8.4",
 		"magick.css": "^1.0.6",
 		"normalize.css": "^8.0.1",
 		"toastmaker": "^1.0.9"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.8.0",
+		"@biomejs/biome": "^1.8.2",
 		"taze": "^0.13.8",
-		"typescript": "^5.4.5"
+		"typescript": "^5.5.2"
 	},
-	"packageManager": "pnpm@9.2.0"
+	"packageManager": "pnpm@9.4.0"
 }
