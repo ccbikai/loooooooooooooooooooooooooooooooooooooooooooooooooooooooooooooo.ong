@@ -1,0 +1,17 @@
+diff --git a/magick.css b/magick.css
+index 5cc6c0505d6a950fc83b438785f3e2f9b184416a..b76c111b770f1fee14f9b05b2d9373b1b1cd6292 100644
+--- a/magick.css
++++ b/magick.css
+@@ -5,10 +5,10 @@
+  * version: 1.0.5
+ */
+ 
+-@charset "UTF-8";
++/* @charset "UTF-8"; */
+ 
+ /* Importing the fonts. */
+-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,400;0,700;1,400;1,700&family=Averia+Serif+Libre:ital,wght@0,300;0,700;1,300;1,700&family=Caveat&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,300;0,600;1,300;1,600&display=swap&family=Noto+Sans+Symbols+2&display=swap');
++/* @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,400;0,700;1,400;1,700&family=Averia+Serif+Libre:ital,wght@0,300;0,700;1,300;1,700&family=Caveat&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,300;0,600;1,300;1,600&display=swap&family=Noto+Sans+Symbols+2&display=swap'); */
+ 
+ /* Simple CSS Reset */
+ * {

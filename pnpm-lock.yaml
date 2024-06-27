@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  magick.css@1.0.6:
+    hash: 6g57hc6pii3lkexqvikmkfajqy
+    path: patches/magick.css@1.0.6.patch
+
 importers:
 
   .:
@@ -22,7 +27,7 @@ importers:
         version: 0.8.4(typescript@5.5.2)
       magick.css:
         specifier: ^1.0.6
-        version: 1.0.6
+        version: 1.0.6(patch_hash=6g57hc6pii3lkexqvikmkfajqy)
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -4166,7 +4171,7 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  magick.css@1.0.6: {}
+  magick.css@1.0.6(patch_hash=6g57hc6pii3lkexqvikmkfajqy): {}
 
   markdown-table@3.0.3: {}
 
