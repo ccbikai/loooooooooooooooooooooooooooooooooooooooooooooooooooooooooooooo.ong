@@ -1,9 +1,9 @@
 import { binaryToString } from "./assets/js/utils";
 
-const DoH =
-	import.meta.env.DOH || "https://family.cloudflare-dns.com/dns-query";
-
-async function isSafeUrl(url) {
+async function isSafeUrl(
+	url,
+	DoH = "https://family.cloudflare-dns.com/dns-query",
+) {
 	let safe = false;
 	try {
 		const { hostname } = new URL(url);
@@ -26,16 +26,17 @@ async function isSafeUrl(url) {
 }
 
 export async function onRequest(context, next) {
-	const matchedPath = context.url.pathname.match(/^\/l(O+)ng$/i);
+	const matchedPath = context?.url?.pathname?.match(/^\/l(O+)ng$/i);
 
 	if (matchedPath) {
 		try {
+			const DoH = context?.locals?.runtime?.env?.DOH || import.meta.env.DOH;
 			const url = binaryToString(matchedPath[1]);
-			const safe = await isSafeUrl(url);
+			const safe = await isSafeUrl(url, DoH);
 			if (safe) {
 				return Response.redirect(url, 308);
 			}
-			console.warn("Unsafe URL: ", url);
+			console.warn("Unsafe URL: ", url, DoH);
 		} catch (e) {
 			console.warn("binaryToString fail: ", matchedPath, e);
 			return next();
