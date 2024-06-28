@@ -8,6 +8,10 @@
   />
 </a>
 
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F69652?style=flat&logo=cloudflare&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)
+![Better Stack](https://uptime.betterstack.com/status-badges/v1/monitor/1cwe5.svg)
+
 Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
 
 <https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong>
