@@ -11,6 +11,10 @@ async function isSafeUrl(
 			headers: {
 				accept: "application/dns-json",
 			},
+			cf: {
+				cacheEverything: true,
+				cacheTtlByStatus: { "200-299": 86400 },
+			},
 		});
 		const dnsResult = await res.json();
 		if (dnsResult && Array.isArray(dnsResult.Answer)) {
