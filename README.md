@@ -19,4 +19,10 @@ Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
 
 <https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong>
 
+## Issue
+
+- [The web is not friendly to long domain names](https://github.com/ccbikai/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong/issues/2)
+
+---
+
 ![Banner](./public/banner.png)
