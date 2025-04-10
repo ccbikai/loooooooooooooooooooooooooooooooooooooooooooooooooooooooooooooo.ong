@@ -1,4 +1,4 @@
-import { binaryToString } from "./utils";
+import { binaryToString } from "./utils.js";
 
 const matchedPath = location.pathname.match(/^\/l(O+)ng$/i);
 
