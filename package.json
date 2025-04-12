@@ -18,8 +18,7 @@
 		"@astrojs/tailwind": "^6.0.2",
 		"astro": "^5.6.1",
 		"astro-seo": "^0.8.4",
-		"tailwindcss": "^3.4.17",
-		"toastmaker": "^1.0.9"
+		"tailwindcss": "^3.4.17"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",

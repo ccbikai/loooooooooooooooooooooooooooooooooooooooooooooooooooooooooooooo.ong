@@ -2,62 +2,31 @@
 import config from "../config.js";
 ---
 
-<header>
-  <a href="/" title={config.title}><h1>{config.title}</h1></a>
-  <p class="break-all">
+<header class="p-6 border-orange-400">
+  <a href="/" title={config.title} class="block text-center no-underline">
+    <h1 class="text-4xl md:text-5xl font-semibold text-orange-500 my-4 font-sans">{config.title}</h1>
+  </a>
+  <p class="break-all text-center text-xl text-orange-500 my-6 md:my-12">
     Make your URL
+    <br />
     looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
   </p>
   <nav>
-    <ul>
+    <ul class="flex justify-center gap-6">
       <li>
         <a
           target="_blank"
           href="https://github.com/ccbikai/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
-          title="Github">Github</a>
+          title="Github"
+          class="block bg-white text-orange-400 py-2 px-6 rounded-full border border-orange-400 hover:bg-orange-100 transition duration-300">Github</a>
       </li>
       <li>
         <a
           target="_blank"
           href="https://buymeacoffee.com/ccbikai"
-          title="Donate">Donate</a>
+          title="Donate"
+          class="block bg-white text-orange-400 py-2 px-6 rounded-full border border-orange-400 hover:bg-orange-100 transition duration-300">Donate</a>
       </li>
     </ul>
   </nav>
 </header>
-
-<style>
-  header {
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-    padding-top: 1.2rem;
-    margin-top: 1rem;
-    font-family: "Averia Libre", serif;
-  }
-
-  p {
-    text-align: center;
-    margin: 0;
-  }
-
-  .break-all {
-    word-break: break-all;
-  }
-
-  ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-
-    li {
-      margin: 0;
-    }
-  }
-</style>

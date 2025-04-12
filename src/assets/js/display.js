@@ -8,10 +8,10 @@ if (matchedPath) {
 		if (!validUrl.href.startsWith("http")) {
 			throw new Error("invalid URL");
 		}
-		const realUrlLext = document.getElementById("real-url-text");
+		const realUrlText = document.getElementById("real-url-text");
 		const realUrl = document.getElementById("real-url");
 		const diaplayUrl = document.getElementById("display-url");
-		realUrlLext.textContent = validUrl.href;
+		realUrlText.textContent = validUrl.href;
 		realUrl.href = validUrl.href;
 		diaplayUrl.style.display = "block";
 	} catch (e) {

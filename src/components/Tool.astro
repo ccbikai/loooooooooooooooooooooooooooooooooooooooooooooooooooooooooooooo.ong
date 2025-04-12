@@ -1,57 +1,36 @@
-<section>
-  <fieldset>
-    <legend>Origin URL</legend>
+<form class="w-full mx-auto py-4 space-y-4">
+  <fieldset class="border border-orange-400 rounded-xl p-6 mb-4">
+    <legend class="px-2 text-orange-500 font-semibold">Origin URL</legend>
     <input
       id="origin-url"
       type="url"
       placeholder="https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
+      class="w-full p-4 border border-orange-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-orange-400 text-orange-500 placeholder-orange-300 mb-4"
     />
   </fieldset>
-  <fieldset>
-    <legend>Long URL</legend>
-    <textarea id="long-url" rows="6" readonly class="break-all" aria-label="Display Long URL"></textarea>
-    <button id="open-url">Open URL</button>
-    <button id="copy-url">Copy URL</button>
+  <fieldset class="border border-orange-400 rounded-xl p-6 mb-4">
+    <legend class="px-2 text-orange-500 font-semibold">Long URL</legend>
+    <textarea 
+      id="long-url" 
+      rows="6" 
+      readonly 
+      class="w-full p-4 border border-orange-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-orange-400 text-orange-500 placeholder-orange-300 break-all resize-none mb-4"
+      aria-label="Display Long URL"></textarea>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <button 
+        id="open-url"
+        type="button"
+        class="bg-white text-orange-400 py-3 px-5 rounded-full border border-orange-400 hover:bg-orange-100 transition duration-300">
+        Open URL
+      </button>
+      <button 
+        id="copy-url"
+        type="button"
+        class="bg-white text-orange-400 py-3 px-5 rounded-full border border-orange-400 hover:bg-orange-100 transition duration-300">
+        Copy URL
+      </button>
+    </div>
   </fieldset>
-</section>
-
-<style>
-  fieldset {
-    width: auto;
-    margin-bottom: 1rem;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    resize: none;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    padding: 0.4rem;
-    font-family: "Caveat", serif;
-  }
-
-  input:hover,
-  textarea:hover {
-    margin-bottom: 1rem;
-  }
-
-  input:focus,
-  textarea:focus {
-    margin-bottom: 1rem;
-  }
-
-  input::placeholder {
-    color: #897a69;
-  }
-
-  button {
-    margin-top: 0;
-  }
-
-  .break-all {
-    word-break: break-all;
-  }
-</style>
+</form>
 
 <script src="../assets/js/tool.js"></script>

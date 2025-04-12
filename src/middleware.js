@@ -39,6 +39,7 @@ export async function onRequest(context, next) {
 			const DoH = context?.locals?.runtime?.env?.DOH || import.meta.env.DOH;
 			const url = binaryToString(matchedPath[1]);
 			const safe = await isSafeUrl(url, DoH);
+      return next();
 			if (safe) {
 				return Response.redirect(url, 308);
 			}

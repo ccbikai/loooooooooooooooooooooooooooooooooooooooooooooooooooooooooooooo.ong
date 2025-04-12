@@ -1,44 +1,27 @@
-<section>
-  <fieldset style="display: none;" id="display-url">
-    <legend>Long URL</legend>
-    <p>
-      This link leads to <span id="real-url-text"></span> .
+<form class="w-full mx-auto py-4">
+  <fieldset style="display: none;" id="display-url" class="border border-orange-400 rounded-xl p-6 mb-4">
+    <legend class="px-2 text-orange-500 font-semibold">Tips</legend>
+    <p class="text-sm md:text-base text-orange-500 mb-4 !leading-8">
+      This link leads to <span id="real-url-text" class="break-words text-orange-500"></span>.
       <br />
       We cannot guarantee the safety of this link. Please click with caution.
     </p>
-    <a id="real-url" href="#" title="Open URL" rel="noopener noreferrer">
-      <button>Open URL</button>
-    </a>
+    <div class="flex flex-wrap gap-4 justify-start">
+      <a id="real-url" href="#" title="Open URL" rel="noopener noreferrer" class="no-underline">
+        <button type="button" class="bg-white text-orange-400 py-2 px-5 rounded-full border border-orange-400 hover:bg-orange-100 transition duration-300">
+          Open URL
+        </button>
+      </a>
 
-    <a href="/" title="Go Home">
-      <button>Go Home</button>
-    </a>
+      <a href="/" title="Go Home" class="no-underline">
+        <button type="button" class="bg-white text-orange-400 py-2 px-5 rounded-full border border-orange-400 hover:bg-orange-100 transition duration-300">
+          Go Home
+        </button>
+      </a>
+    </div>
   </fieldset>
 
   <Fragment set:html={import.meta.env.CONTENT_INJECT} />
-</section>
-
-<style>
-  fieldset {
-    width: auto;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  span {
-    word-break: break-word;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  button {
-    margin: 1rem auto;
-  }
-</style>
+</form>
 
 <script src="../assets/js/display.js"></script>

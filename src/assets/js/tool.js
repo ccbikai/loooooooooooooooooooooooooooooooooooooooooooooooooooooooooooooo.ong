@@ -1,5 +1,3 @@
-import "toastmaker/dist/toastmaker.css";
-import ToastMaker from "toastmaker";
 import { stringToBinary } from "./utils.js";
 
 const originUrl = document.getElementById("origin-url");
@@ -24,6 +22,5 @@ openUrl.addEventListener("click", () => {
 copyUrl.addEventListener("click", async () => {
 	if (longUrl.value) {
 		await navigator.clipboard.writeText(longUrl.value);
-		ToastMaker("L(o*62).ong URL Copied!", 1000);
 	}
 });
