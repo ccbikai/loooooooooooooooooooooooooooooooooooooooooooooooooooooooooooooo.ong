@@ -8,6 +8,14 @@
   />
 </a>
 
+<a href="https://www.producthunt.com/posts/l-o-62-ong">
+  <img
+    style="width: 250px; height: 54px;" width="250" height="54"
+    alt="Featured on ProductHunt"
+    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=947984&theme=light"
+  />
+</a>
+
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white)
