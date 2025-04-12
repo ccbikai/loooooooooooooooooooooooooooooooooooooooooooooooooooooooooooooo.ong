@@ -24,12 +24,7 @@
 		"@biomejs/biome": "^1.9.4",
 		"taze": "^19.0.4",
 		"typescript": "^5.8.3",
-		"wrangler": "^4.9.1"
+		"wrangler": "^4.10.0"
 	},
-	"packageManager": "pnpm@10.8.0",
-	"pnpm": {
-		"patchedDependencies": {
-			"magick.css@1.0.6": "patches/magick.css@1.0.6.patch"
-		}
-	}
+	"packageManager": "pnpm@10.8.0"
 }
