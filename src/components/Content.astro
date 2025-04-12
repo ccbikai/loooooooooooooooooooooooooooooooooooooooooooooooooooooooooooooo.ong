@@ -1,10 +1,10 @@
-<section>
-  <fieldset>
-    <p>
+<section class="w-full mx-auto py-4">
+  <div class="border border-orange-400 rounded-xl p-6 mb-4">
+    <p class="text-sm md:text-base text-orange-500 !leading-8">
       A domain name can be registered with up to 63 characters, so I registered <a
         href="https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
         title="Long"
-        class="break-all"
+        class="break-all text-orange-400 hover:text-orange-500 transition duration-300"
         >loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong</a
       >.
       <br />
@@ -14,31 +14,19 @@
       The maximum length for a domain name is 253 characters, hence <a
         target="_blank"
         href="https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.oooooooooooooooooooooooooooooooooooooooooooooooonger.than.loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
-        title="Longer than Long">Longer than Long</a
+        title="Longer than Long"
+        class="text-orange-400 hover:text-orange-500 transition duration-300">Longer than Long</a
       > was born.
       <br />
       I encountered quite a few issues during the process, which I've documented
       in this <a
         target="_blank"
         href="https://github.com/ccbikai/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong/issues/2"
-        title="Github Issue">Github Issue</a
+        title="Github Issue"
+        class="text-orange-400 hover:text-orange-500 transition duration-300">Github Issue</a
       >. Feel free to join the discussion.
     </p>
-  </fieldset>
+  </div>
   <Fragment set:html={import.meta.env.CONTENT_INJECT} />
 </section>
 
-<style>
-  fieldset {
-    width: auto;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    margin: 0.5rem 0;
-  }
-
-  .break-all {
-    word-break: break-all;
-  }
-</style>

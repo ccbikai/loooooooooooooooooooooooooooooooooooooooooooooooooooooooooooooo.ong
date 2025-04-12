@@ -1,4 +1,6 @@
-import { binaryToString } from "./assets/js/utils";
+import { binaryToString } from "./assets/js/utils.js";
+
+const pathRegex = /^\/l(O+)ng$/i;
 
 async function isSafeUrl(
 	url,
@@ -30,7 +32,7 @@ async function isSafeUrl(
 }
 
 export async function onRequest(context, next) {
-	const matchedPath = context?.url?.pathname?.match(/^\/l(O+)ng$/i);
+	const matchedPath = context?.url?.pathname?.match(pathRegex);
 
 	if (matchedPath) {
 		try {
@@ -40,9 +42,7 @@ export async function onRequest(context, next) {
 			if (safe) {
 				return Response.redirect(url, 308);
 			}
-			console.warn("Unsafe URL: ", url, DoH);
-		} catch (e) {
-			console.warn("binaryToString fail: ", matchedPath, e);
+		} catch (_e) {
 			return next();
 		}
 	}

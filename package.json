@@ -9,24 +9,24 @@
 		"preview": "wrangler pages dev ./dist",
 		"astro": "astro",
 		"update": "taze -I",
-		"check": "biome check --write --unsafe ."
+		"check": "biome check --unsafe .",
+		"check:fix": "biome check --write --unsafe ."
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.7.0",
-		"@astrojs/cloudflare": "^11.0.1",
-		"astro": "^4.11.1",
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/cloudflare": "^12.4.0",
+		"@astrojs/tailwind": "^6.0.2",
+		"astro": "^5.6.1",
 		"astro-seo": "^0.8.4",
-		"magick.css": "^1.0.6",
-		"normalize.css": "^8.0.1",
-		"toastmaker": "^1.0.9"
+		"tailwindcss": "^3.4.17"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.8.2",
-		"taze": "^0.13.8",
-		"typescript": "^5.5.2",
-		"wrangler": "^3.62.0"
+		"@biomejs/biome": "^1.9.4",
+		"taze": "^19.0.4",
+		"typescript": "^5.8.3",
+		"wrangler": "^4.9.1"
 	},
-	"packageManager": "pnpm@9.4.0",
+	"packageManager": "pnpm@10.8.0",
 	"pnpm": {
 		"patchedDependencies": {
 			"magick.css@1.0.6": "patches/magick.css@1.0.6.patch"
