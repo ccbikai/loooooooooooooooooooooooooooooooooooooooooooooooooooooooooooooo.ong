@@ -7,6 +7,9 @@ export default defineConfig({
 	output: "server",
 	adapter: cloudflare({
 		imageService: "compile",
+		workerEntryPoint: {
+      path: 'src/worker.js',
+    }
 	}),
 	integrations: [tailwind()],
 });
